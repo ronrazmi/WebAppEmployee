@@ -1,0 +1,13 @@
+<h3> Here are all of the employees  </h3>
+
+<% @employees.each do |employee| %>
+<p><%= employee.id %> </p>	
+<p><%= employee.first_name %> </p>
+<p><%= employee.last_name %> </p>
+<p><%= employee.full_name %> </p>
+<p><%= employee.title %> </p>
+<p><%= employee.phone %> </p>
+<p><%= employee.team %> </p>
+<p><%= employee.university %> </p>
+<hr>
+<% end %>

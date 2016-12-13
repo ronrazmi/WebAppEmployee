@@ -1,0 +1,32 @@
+<h3> Here is the employee to edit </h3>
+
+<%= form_tag "/employees/#{@employee["id"]}", method: :patch do %>
+
+	<div>
+	<%= label_tag :first_name %>
+	<%= text_field_tag :form_first_name, @employee["first_name"] %>
+	</div>
+	<div>
+	<%= label_tag :last_name %>
+	<%= text_field_tag :form_last_name, @employee["last_name"] %>
+	</div>
+	<div>
+	<%= label_tag :title %>
+	<%= text_field_tag :form_title, @employee["title"] %>
+	</div>
+	<div>
+	<%= label_tag :phone_number %>
+	<%=text_field_tag :form_phone_number, @employee["phone_number"] %>
+	</div>
+	<div>
+	<%=label_tag :team %>
+	<%=text_field_tag :form_team, @employee["team"] %>
+	</div>
+	<div>
+	<%=label_tag :university %>
+	<%=text_field_tag :form_university, @employee["university"] %>
+	</div>
+
+	<%= submit_tag 'submit Updates' %>
+
+	<% end %>

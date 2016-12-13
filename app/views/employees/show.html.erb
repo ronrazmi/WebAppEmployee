@@ -1,0 +1,15 @@
+<h3> Here is the employee information </h3>
+
+<p><%= @employee.id %> </p>
+<p><%= @employee.first_name %> </p>
+<p><%= @employee.last_name %> </p>
+<p><%= @employee.full_name %> </p>
+<p><%= @employee.title %> </p>
+<p><%= @employee.phone %> </p>
+<p><%= @employee.team %> </p>
+<p><%= @employee.university %> </p>
+
+
+
+<p><%= link_to "edit", "/employees/#{@employee.id}/edit" %></p>
+<p><%= link_to "Delete", "/employees/#{@employee.id}", method: :delete %></p>

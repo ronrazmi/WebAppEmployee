@@ -1,0 +1,32 @@
+<h3> Enter the new employee </h3>
+
+<%= form_tag '/employees', method: :post do %>
+
+	<div>
+	<%= label_tag :first_name %>
+	<%= text_field_tag :form_first_name %>
+	</div>
+	<div>
+	<%= label_tag :last_name %>
+	<%= text_field_tag :form_last_name %>
+	</div>
+	<div>
+	<%= label_tag :title %>
+	<%= text_field_tag :form_title %>
+	</div>
+	<div>
+	<%= label_tag :phone_number %>
+	<%=text_field_tag :form_phone_number %>
+	</div>
+	<div>
+	<%=label_tag :team %>
+	<%=text_field_tag :form_team %>
+	</div>
+	<div>
+	<%=label_tag :university %>
+	<%=text_field_tag :form_university %>
+	</div>
+
+	<%= submit_tag 'submit' %>
+
+	<% end %>
